@@ -14,7 +14,7 @@ def __wb__():
         print(Fore.YELLOW + "[*] ~ Hello . Welcome Back ;)")
         time.sleep(1)
         target = input(Fore.GREEN + "\n[!] - Enter your Address Target ==>  ")
-        if target == "" oy None:
+        if target == "" or None:
             try:
                 time.sleep(2)
                 print(Fore.RED + "\n[!] ~ Error : Your Target is Not Found ;(")
