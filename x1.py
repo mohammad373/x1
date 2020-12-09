@@ -2,7 +2,7 @@
 
 import os
 import sys
-import socke
+import socket
 import time
 import webbrowser as wb
 from colorama import Fore
@@ -22,7 +22,7 @@ def __wb__():
                 sys.exit()
             except:
                 pass
-        ip = socke.gethostbyname(target)
+        ip = socket.gethostbyname(target)
         time.sleep(0.2)
         print(Fore.BUE + "\n[" + Fore.RED + "+" + Fore.BLUE + "]" + Fore.YELLOW + "~" + Fore.GREEN + "Your Ip Target : " + Fore.YELLOW + ip)
         time.sleep(0.6)
