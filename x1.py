@@ -23,38 +23,38 @@ def __wb__():
             except:
                 pass
         ip = socket.gethostbyname(target)
-        time.sleep(0.2)
+        time.sleep(2)
         print(Fore.BLUE + f"\n[+] ~ Your Ip Target Is : {ip}")
-        time.sleep(0.6)
+        time.sleep(1)
         yes = input(Fore.GREEN + "\n[!] ~ Do You Want To Continue ? (y or n ) ==>  ")
         if yes == "" or None:
             try:
                 time.sleep(1)
                 print(Fore.RED + "\n[!] - Error : Sory Not Found ;(")
-                time.sleep(0.2)
+                time.sleep(1)
                 print(Fore.YELLOW + "Ok Good Bay ;)")
                 sys.exit()
             except:
                 pass
         if yes.lower() == "n":
             try:
-                time.sleep(0.5)
+                time.sleep(1)
                 print(Fore.GREEN + "\n[-] ~ Ok Good Bay ;)")
-                time.sleep(0.3)
+                time.sleep(1)
                 sys.exit()
             except:
                 pass
         if yes.lower() == "y":
             try:
-                time.sleep(0.3)
+                time.sleep(1)
                 print(Fore.GREEN + "\n[+] ~ OK Lets Go ;)")
-                time.sleep(0.2)
+                time.sleep(1)
                 y = int(input(Fore.GREEN + "\n[!] - Do You Want the 1 : Site Link Or The 2 : Site Will Open ? ==> "))
                 if y == "" or None:
                     try:
-                        time.sleep(0.4)
+                        time.sleep(1)
                         print(Fore.RED + "[!] - Error : Not Found ;(")
-                        time.sleep(0.3)
+                        time.sleep(1)
                         sys.exit()
                     except:
                         pass
