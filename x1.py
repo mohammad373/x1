@@ -22,8 +22,8 @@ def __wb__():
                 sys.exit()
             except:
                 pass
-        # ip = socket.gethostbyname(target)
-        # time.sleep(0.2)
+        ip = socket.gethostbyname(target)
+        time.sleep(0.2)
         # print(Fore.BUE + "\n[" + Fore.RED + "+" + Fore.BLUE + "]" + Fore.YELLOW + "~" + Fore.GREEN + "Your Ip Target : " + Fore.YELLOW + ip)
         # time.sleep(0.6)
         yes = input(Fore.GREEN + "\n[!] ~ Do You Want To Continue ? (y or n ) ==>  ")
