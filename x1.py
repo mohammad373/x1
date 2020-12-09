@@ -14,6 +14,7 @@ def __wb__():
         print(Fore.YELLOW + "[*] ~ Hello . Welcome Back ;)")
         time.sleep(1)
         target = input(Fore.GREEN + "\n[!] - Enter your Address Target ==>  ")
+        ip = socket.gethostbyname(target)
         if target == "" or None:
             try:
                 time.sleep(2)
@@ -22,9 +23,8 @@ def __wb__():
                 sys.exit()
             except:
                 pass
-        ip = socket.gethostbyname(target)
         time.sleep(0.2)
-        print(Fore.BUE + "\n[" + Fore.RED + "+" + Fore.BLUE + "]" + Fore.YELLOW + "~" + Fore.GREEN + "Your Ip Target : " + Fore.YELLOW + ip)
+        print(Fore.BUE + "\n[" + Fore.RED + "+" + Fore.BLUE + "]" + Fore.YELLOW + "~" + Fore.GREEN + "Your Ip Target : " + Fore.YELLOW + "o")
         time.sleep(0.6)
         yes = input(Fore.GREEN + "\n[!] ~ Do You Want To Continue ? (y or n ) ==>  ")
         if yes == "" or None:
